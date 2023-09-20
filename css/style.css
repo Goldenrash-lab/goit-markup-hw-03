@@ -108,7 +108,8 @@ img {
   gap: 40px;
 }
 .menu__list-item {
-  padding: 24px 0px;
+  /* padding: 24px 0px; */
+  display: flex;
 }
 .menu__list-item:hover,
 .menu__list-link:focus {
