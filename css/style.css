@@ -77,6 +77,7 @@ img {
 .header__container {
   display: flex;
   align-items: center;
+  padding: 0 15px;
 }
 .header__menu {
   display: flex;
@@ -105,6 +106,8 @@ img {
   list-style: none;
   display: flex;
   gap: 40px;
+}
+.menu__list-item {
   padding: 24px 0px;
 }
 .menu__list-item:hover,
@@ -131,10 +134,10 @@ img {
 /*Banner*/
 .banner {
   background-color: var(--navy-blue);
+  padding: 188px 0;
 }
 
 .banner__container {
-  padding: 188px 0;
   text-align: center;
 }
 
@@ -162,15 +165,19 @@ img {
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 16px 32px;
+  display: block;
+  min-width: 169px;
+  margin: 0 auto;
 }
 .main__btn:hover,
 .main__btn:focus {
   background-color: var(--ocean);
 }
 /* benefits*/
+.benefits {
+  padding: 120px 0;
+}
 .benefits__container {
-  padding-top: 120px;
-  padding-bottom: 60px;
 }
 .benefits__list {
   display: flex;
@@ -178,6 +185,7 @@ img {
 }
 .benefits__list-item {
   min-width: 264px;
+  width: calc((100% - 72px) / 4);
 }
 .benefits__item-title {
   margin-bottom: 8px;
@@ -201,8 +209,7 @@ img {
 }
 
 /*Services*/
-.services__container {
-  padding-top: 60px;
+.services {
   padding-bottom: 120px;
 }
 
@@ -219,14 +226,16 @@ img {
   display: flex;
   gap: 24px;
 }
+.services__list-item {
+  width: calc((100% - 48px) / 3);
+}
 
 /*TEAM*/
 .team {
   background-color: var(--cloud);
+  padding: 120px 0;
 }
 .team__container {
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 .team__title {
   font-size: 36px;
@@ -235,7 +244,7 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--navy-blue);
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .team__list {
   display: flex;
@@ -243,6 +252,8 @@ img {
 }
 .team__list-item {
   background-color: #ffffff;
+  width: calc((100%-72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 .team__item-box {
   padding: 32px 0;
@@ -281,17 +292,17 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  border-radius: 4px;
 }
 .filters__btn:hover,
 .filters__btn:focus {
   background-color: var(--ocean);
-  border: 1px solid var(--ocean);
+  border: 1px solid transparent;
   color: #fff;
 }
 /* CARDS */
-.cards__container {
-  padding-top: 96px;
-  padding-bottom: 120px;
+.cards {
+  padding: 96px 0 120px 0;
 }
 
 .cards__list {
@@ -327,17 +338,12 @@ img {
 /*Footer*/
 .footer {
   background-color: var(--navy-blue);
+  padding: 100px 0;
 }
 .footer > p {
   color: var(--cloud);
 }
-.footer__container {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
+
 .footer__text {
   letter-spacing: 0.02em;
   max-width: 264px;
@@ -345,4 +351,8 @@ img {
 }
 .footer .logo span {
   color: var(--cloud);
+}
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
